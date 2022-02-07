@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css/style.css">
+    <title>Projet Location Voiture</title>
+</head>
+<body>
+    <!---------------------Barre de navigation------------------>
+    <nav>
+        <div class="nav-menu-left">
+            <div class="nav-burger">
+                <div class="barre"></div>
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <span class="nav-burger-menu">Menu</span>
+            <div class="nav-list-burger">
+                <ul class="nav-list-items">
+                    <li class="list-item">
+                        <img src="ressources/icons8-home.svg" alt="un icone de maison"> Accueil
+                    </li>
+                    <li class="list-item">
+                        <img src="ressources/icons8-omnichannel-50.png" alt="un icone de cadenas pour inscription">Inscription
+                    </li>
+                    <li class="list-item">
+                        <img src="ressources/icons8-account-50.png" alt="un icone d'un utilisateur">Connexion
+                    </li>
+                    <li class="list-item">
+                        <img src="ressources/icons8-car-50.png" alt="un icone de voiture">Louer mon véhicule
+                    </li>
+                    <li class="list-item">
+                        <img src="ressources/icons8-info.svg" alt="un icone de du caratere i pour info">Comment ça marche ?
+                    </li>
+                    <li class="list-item">
+                        <img src="ressources/icons8-help-16.png" alt="un icone de point d'interrogation">Centre d'aide
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="nav-icon-menu-middle">
+            <a href="#accueil">
+                LOGO
+            </a>
+        </div>
+
+        <div class="nav-menu-right">
+            <a href="#" class="location">Louer mon véhicule</a>
+            <a href="#" class="inscrit">Inscription</a>
+            <a href="#" class="connect">Connexion</a>
+        </div>
+    </nav>
+
+    <!----------------Page d'accueil et recherche------------->
+
+    <div class="container-accueil">
+        <div class="container-accueil-titre">
+            <h1>Louez une voiture</h1>
+            <p>
+                Il est temps d'aller prendre l'air ! 
+            </p>
+        </div>
+
+        <form action="">
+            <input type="text" id="adress" placeholder="Saissisez une adresse, une gare..." >
+            <input type="date" id="adress" placeholder="Début de location">
+            <input type="date" id="adress" placeholder="Fin de location">
+            <select name="km" id="kilometre">
+                <option value="0">Km</option>
+                <option value="10">10Km</option>
+                <option value="20">20Km</option>
+                <option value="30">30Km</option>
+                <option value="40">40Km</option>
+                <option value="50">50Km</option>
+                <option value="60">60Km</option>
+            </select>
+            <button type="submit">Rechercher</button>
+        </form>
+
+        <span class="assurance">Assurance partenaire</span>
+    </div>
+
+    <!-----------------------Resume Entre accueil et liste voiture----------------------->
+
+    <div class="container-propos">
+        <p class="propos-item">
+            Conducteurs supplémentaires et tous équipements gratuits
+        </p>
+        <p class="propos-item">
+            Assurance multirisque et assistance 24h/7j.
+        </p>
+        <p class="propos-item">
+            30 000 voitures et utilitaires à louer partout en France
+        </p>
+
+    </div>
+
+
+
+    <!-----------------Liste des voitures & avis----------------->
+
+    <div class="container-list">
+
+        <div class="list-voiture">
+            <h3>Louez une voiture</h3>
+            <div class="card-galerie-voiture">
+                <div class="card">
+
+                </div>
+                <div class="card">
+                    
+                </div>
+                <div class="card">
+                    
+                </div>
+                <div class="card">
+                    
+                </div>
+                <div class="card">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="list-avis">
+            <h3>Les Avis des personnes qui se font confiance</h3>
+            <div class="card-avis">
+                <div class="card-galerie-avis">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

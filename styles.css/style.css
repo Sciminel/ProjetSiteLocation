@@ -1,0 +1,370 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barre de navigation */ 
+
+nav {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-left{
+    border-right: .5px solid #aaa;
+    padding: 15px;
+}
+
+/*Menu burger*/
+.nav-menu-left .nav-burger {
+    width: 40px;
+    height: 25px;
+    position: relative;
+}
+
+.nav-menu-left .nav-burger .barre {
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: #000;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in-out;
+}
+
+.nav-menu-left .nav-burger .barre:nth-child(1){
+    top: 4px;
+}
+.nav-menu-left .nav-burger .barre:nth-child(2){
+    top: 12px;
+}
+.nav-menu-left .nav-burger .barre:nth-child(3){
+    top: 20px;
+}
+
+/*Animation burger */
+
+.nav-menu-left.active .nav-burger .barre:nth-child(1){
+    top: 12px;
+    left: 4px;
+    transform: rotate(135deg);
+}
+.nav-menu-left.active .nav-burger .barre:nth-child(2){
+    top: 12px;
+    left: 4px;
+    transform: translateY(50%) rotate(-135deg);
+}
+.nav-menu-left.active .nav-burger .barre:nth-child(3){
+    top: 12px;
+    left: 4px;
+    transform: translateY(50%) rotate(135deg);
+}
+
+.nav-menu-left .nav-burger-menu{
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.nav-menu-left .nav-list-burger {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    background: #fff;
+    box-shadow: 1px -1px 1px #ccc;
+}
+
+/* Liste du menu avec les logo */
+.nav-menu-left .nav-list-burger .nav-list-items {
+    display: none;
+
+}
+.nav-menu-left .nav-list-burger .nav-list-items.active {
+    display: block;
+}
+.nav-menu-left .nav-list-burger .nav-list-items .list-item{
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding: 20px 35px 20px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #777;
+    transition: all .4s ease-in-out;
+}
+
+.nav-menu-left .nav-list-burger .nav-list-items .list-item img{
+    width: 20px;
+    height: 20px;
+    margin: -5px 10px;
+}
+
+.nav-menu-left .nav-list-burger .nav-list-items .list-item .list-icon{
+    width: 100%;
+    height: auto;
+    background-image: url("../ressources/icons8-account-50.png");
+}
+
+.nav-menu-left .nav-list-burger .nav-list-items .list-item:hover{
+    transform: translateX(15px);
+}
+
+/* Millieu de la barre de navigation */ 
+nav .nav-icon-menu-middle{
+    width: 70px;
+    height: 60px;
+    margin-top: 5px ;
+    border-radius: 60% 20%;
+    background: rgb(0, 116, 106);
+}
+
+nav .nav-icon-menu-middle a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    line-height: 70px;
+    display: block;
+    text-align: center;
+    font-family: cursive;
+}
+
+nav .nav-menu-right {
+    margin: 0;
+}
+
+nav .nav-menu-right .location{
+    text-decoration: none;
+    color: rgb(0, 116, 106);
+    padding: 10px;
+    border: 2px solid rgb(0, 116, 106);
+    ;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: .2s ease-in-out;
+}
+
+nav .nav-menu-right .location:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 116, 106);
+    transform: translateY(100%);
+}
+nav .nav-menu-right .inscrit,
+nav .nav-menu-right .connect{
+    text-decoration: none;
+    color: #333;
+    padding: 30px 25px;
+    font-size: 12px;
+    border-left: 1px solid rgba(100,100,100,.5);
+}
+
+nav .nav-menu-right .inscrit:hover,
+nav .nav-menu-right .connect:hover{
+    background: #f1f1f1;
+}
+
+/* REsponsive A faire *************************************************/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************************************************************************/
+
+/*Page d'accueil */ 
+
+.container-accueil {
+    width: 100%;
+    height: 500px;
+    background:center / cover url("../ressources/voiture.jpg") no-repeat ;
+}
+
+.container-accueil .container-accueil-titre h1 {
+    color: #fff;
+    font-weight: 600;
+    padding: 60px 0 10px 20px;
+    font-size: 40px;
+    text-shadow: 3px 1px 10px #aaa;
+}
+
+.container-accueil .container-accueil-titre p {
+    color: #fff;
+    padding: 0px 0 60px 20px;
+    font-size: 22px;
+    text-shadow: 3px 1px 10px #aaa;
+}
+
+.container-accueil form {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.container-accueil form input:nth-child(1){
+    width: 40%;
+    height: 50px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.container-accueil form input:nth-child(2){
+    width: 20%;
+    height: 50px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.container-accueil form input:nth-child(3){
+    width: 20%;
+    height: 50px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.container-accueil form select{
+    width: 18%;
+    height: 50px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.container-accueil form button{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background: rgb(0, 116, 106);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.container-accueil .assurance {
+    color: #fff;
+    display: block;
+    width: 100%;
+    text-align: end;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+
+/* REsponsive A faire *************************************************/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************************************************************************/
+
+
+/*  A propos  */
+
+.container-propos{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.container-propos .propos-item{
+    width: 30%;
+    text-align: start;
+    margin: 30px 0;
+    padding: 10px 60px;
+}
+.propos-item:not(.propos-item:last-child){
+    border-right: 1px solid #aaa;
+}
+
+
+/* REsponsive A faire *************************************************/ 
+
+
+
+
+
+
+
+
+/* *************************************************************************/
+
+.container-list{
+    width: 100%;
+    display: flex;
+    margin: 60px 0 30px 20px;
+    justify-content: space-between;
+}
+.container-list .list-voiture{
+    width: 50%;
+    height: auto;
+}
+
+.container-list .list-voiture .card-galerie-voiture{
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container-list .list-voiture .card-galerie-voiture .card{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.container-list .list-avis{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
