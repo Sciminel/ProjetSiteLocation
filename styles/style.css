@@ -207,14 +207,14 @@ nav .nav-menu-right .connect:hover{
 .container-accueil .container-accueil-titre h1 {
     color: #fff;
     font-weight: 600;
-    padding: 60px 0 10px 20px;
+    padding: 60px 0 10px 35px;
     font-size: 40px;
     text-shadow: 3px 1px 10px #aaa;
 }
 
 .container-accueil .container-accueil-titre p {
     color: #fff;
-    padding: 0px 0 60px 20px;
+    padding: 0px 0 60px 35px;
     font-size: 22px;
     text-shadow: 3px 1px 10px #aaa;
 }
@@ -636,6 +636,39 @@ nav .nav-menu-right .connect:hover{
 
 /* Contact info */ 
 
+.container-info {
+    width: 50%;
+    background: #fff;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #aaa;
+}
+
+.container-info .info-question {
+    padding: 40px 20px;
+}
+
+.container-info .info-question h3{
+    padding: 20px 0;
+    font-size: 2rem;
+}
+.container-info .info-question p{
+    line-height: 20px;
+    font-size: 1.2rem;
+
+}
+
+.container-info .info-question p span{
+    color: rgb(0, 116, 106);
+    font-weight: 600;
+}
+.container-info .info-question p:nth-child(3){
+    color: #aaa;
+    font-weight: 100;
+    font-size: .8rem;
+}
+
+/* REsponsive A faire *************************************************/ 
 
 
 
@@ -647,16 +680,100 @@ nav .nav-menu-right .connect:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
+/************************************************************/ 
 
 
 /* Footer */ 
+
+footer {
+    width: 100%;
+    height: 400px;
+    background: #555;
+    color: #fff;
+}
+
+footer .container-footer{
+    width: 60%;
+    margin: 50px auto 0;
+    padding: 50px 0;
+    border-bottom: 1px solid #fff;
+}
+
+footer .container-footer .foot-list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .container-footer .foot-list h4{
+    padding-bottom: 20px;
+    font-size: .8rem;
+}
+footer .container-footer .foot-list li{
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: .6rem;
+    cursor: pointer;
+}
+footer .container-footer .foot-list li:hover{
+    text-decoration: underline;
+}
+
+footer .renseignement {
+    width: 60%;
+    text-align: center;
+    margin: 30px auto;
+    border-bottom: 1px solid #fff;
+}
+footer .renseignement span{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+footer .renseignement .renseigne-img img{
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REsponsive A faire *************************************************/ 
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************/ 
+
+
